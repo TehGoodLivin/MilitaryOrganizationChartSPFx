@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "672949d0-9a4a-48ae-b117-f5ebc8027452",
+  "alias": "OrganizationChartWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+  "supportsFullBleed": true,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "Organization Chart" },
+    "description": { "default": "Modern SP Military Org Chart by TehGoodLivin" },
+    "officeFabricIconFontName": "Org",
+    "properties": {
+      "webpartTitle": "Organization Chart",
+      "lineColor": "rgba(170,170,170,1)",
+      "borderColor": "rgba(68,68,68,1)",
+      "selectedGradientStart": "rgba(247,107,28,1)",
+      "selectedGradientEnd": "rgba(250,217,97,1)",
+      "selectedBorderColor": "rgba(230,81,0,1)",
+      "selectedFontColor": "rgba(255,255,255,1)",
+      "siteUrl": "",
+      "list": "",
+      "unitFilterLock": "",
+      "titleField": "Title",
+      "unitField": "Unit",
+      "officeField": "Office",
+      "rankField": "Rank",
+      "nameField": "Name",
+      "billetField": "Billet",
+      "ownerField": "Owner",
+      "panelColumns": "",
+      "officeSortPriority": "CC,CD,DS,DO,SEL,CCF",
+      "unitSortPriority": "",
+      "leadershipOffices": "CC,CD,DS,DO,SEL,CCF",
+      "cardLines": "[[\"Billet\"]]",
+      "addPositionBtnColor": "rgba(26,26,46,1)",
+      "saveImageBtnColor": "rgba(26,26,46,1)",
+      "deleteBtnColor": "rgba(204,0,0,1)",
+      "cancelBtnColor": "rgba(244,244,244,1)",
+      "saveBtnColor": "rgba(40,167,69,1)",
+      "addFormBtnColor": "rgba(40,167,69,1)",
+      "moveBtnColor": "rgba(26,26,46,1)",
+      "okBtnColor": "rgba(244,244,244,1)",
+      "specialtyCodeColors": ""
+    }
+  }]
+}

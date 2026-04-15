@@ -1,0 +1,155 @@
+define([], function() {
+  return {
+    // Property Pane
+    "WebPartTitle": "Organization Chart",
+    "WebPartSettingsGroup": "Web Part Settings",
+    "DisplaySettingsGroup": "Display Settings",
+    "LayoutSettingsGroup": "Layout Settings",
+    "HideWhiteSpaceLabel": "Hide Excess White Space",
+    "HideMenusLabel": "Hide Menus",
+    "HideTopNavLabel": "Hide Top Navigation",
+    "ToggleOnText": "On",
+    "ToggleOffText": "Off",
+    "DataSourceGroup": "Data Source Settings",
+    "CardGroup": "Card Settings",
+    "CardLinesLabel": "Additional Card Lines (JSON)",
+    "CardLinesDesc": "JSON array of lines to show below Unit/Office. Each line is an array of column names with optional separators like \" | \". Example: [[\"Billet\"],[\"Email\",\" | \",\"DSN\"]]. Default: Billet field only.",
+    "DetailPanelGroup": "Detail Panel Settings",
+    "SortGroup": "Sort Settings",
+    "WebPartTitleLabel": "Web Part Title",
+    "LineColorLabel": "Line Color",
+    "CardBorderColorLabel": "Card Border Color",
+    "SelectedGradientStartLabel": "Selected Gradient Start Color",
+    "SelectedGradientEndLabel": "Selected Gradient End Color",
+    "SelectedBorderColorLabel": "Selected Card Border Color",
+    "SelectedFontColorLabel": "Selected Card Font Color",
+    "ButtonSettingsGroup": "Button Settings",
+    "AddPositionBtnColorLabel": "Add Position Button Color",
+    "SaveImageBtnColorLabel": "Save as Image Button Color",
+    "DeleteBtnColorLabel": "Delete Button Color",
+    "CancelBtnColorLabel": "Cancel Button Color",
+    "SaveBtnColorLabel": "Save Position Button Color",
+    "AddFormBtnColorLabel": "Add Position Form Button Color",
+    "MoveBtnColorLabel": "Move Position Button Color",
+    "OkBtnColorLabel": "OK Button Color",
+    "SpecialtyCodeColorsLabel": "Specialty Code Colors (JSON)",
+    "SpecialtyCodeColorsDesc": "JSON array. Each entry: {\"Code\":\"...\",\"GradientStart\":\"rgba(...)\",\"GradientEnd\":\"rgba(...)\",\"FontColor\":\"rgba(...)\"}. Use Code \"Other\" as fallback.",
+    "SiteUrlLabel": "Site URL",
+    "SiteUrlDesc": "Full URL of the SharePoint site containing the list. Leave blank to use the current site.",
+    "ListNameLabel": "List Name",
+    "ListNameDesc": "Internal name or display name of the SharePoint list.",
+    "UnitFilterLockLabel": "Unit",
+    "UnitFilterLockDesc": "Lock this web part to a single unit. Leave blank to show all units with a dropdown selector.",
+    "TitleFieldLabel": "Title Field",
+    "TitleFieldDesc": "Column storing each position's job or role title.",
+    "UnitFieldLabel": "Unit Field",
+    "UnitFieldDesc": "Column identifying which unit this position belongs to.",
+    "OfficeFieldLabel": "Office Field",
+    "OfficeFieldDesc": "Office symbol or functional area shorthand.",
+    "RankFieldLabel": "Rank Field",
+    "RankFieldDesc": "Column storing the rank or grade abbreviation.",
+    "NameFieldLabel": "Name Field",
+    "NameFieldDesc": "Column storing the full name. Empty = Vacant.",
+    "BilletFieldLabel": "Billet Field",
+    "BilletFieldDesc": "Unique identifier for each position (node ID).",
+    "OwnerFieldLabel": "Owner Field",
+    "OwnerFieldDesc": "Billet value of direct supervisor. Blank = root.",
+    "SpecialtyCodeFieldLabel": "Specialty Code Field",
+    "SpecialtyCodeFieldDesc": "Column storing the specialty code for card coloring. Default: \"Code\".",
+    "PanelColumnsLabel": "Detail Panel Columns (JSON)",
+    "PanelColumnsDesc": "JSON array of lines for the detail panel. Each line is an array of column names. Use literal strings for separators. Example: [[\"Email\"],[\"Commercial\",\" | \",\"DSN\"]]",
+    "OfficeSortPriorityLabel": "Office Sort Priority",
+    "OfficeSortPriorityDesc": "Comma-separated Office values to pin first. Case-insensitive.",
+    "UnitSortPriorityLabel": "Unit Sort Priority",
+    "UnitSortPriorityDesc": "Comma-separated Unit values to pin first when \"All Units\" is selected.",
+    "LeadershipOfficesLabel": "Leadership Offices",
+    "LeadershipOfficesDesc": "Comma-separated Office codes that always remain visible during search drill-downs.",
+
+    // Page Edit Mode
+    "SavePageMessage": "Please save the page for the organizational chart to be rendered.",
+
+    // Config & Loading
+    "ConfigureMessage": "Please configure the list in the web part settings, or ensure the list contains the required default columns.",
+    "LoadingMessage": "Loading...",
+    "NoDataMessage": "No data found in list.",
+
+    // Toolbar
+    "AddPositionButton": "+ Add Position",
+    "SaveAsImageButton": "\uD83D\uDCF7 Save as Image",
+
+    // Search & Filter
+    "SearchPlaceholder": "Search by name",
+    "AllUnitsOption": "All Units",
+    "AllOfficesOption": "All Offices",
+
+    // Warnings
+    "OrphanWarningPrefix": "Data warning:",
+    "OrphanWarningSuffix_Singular": "position references an Owner billet that does not exist in the list and will appear as a root node. Affected billet:",
+    "OrphanWarningSuffix_Plural": "positions reference an Owner billet that does not exist in the list and will appear as root nodes. Affected billets:",
+    "InvalidPanelColsPrefix": "Note:",
+    "InvalidPanelColsSuffix_Singular": "The following Detail Panel Column was not found in the list and will be skipped:",
+    "InvalidPanelColsSuffix_Plural": "The following Detail Panel Columns were not found in the list and will be skipped:",
+    "InvalidPanelColsTail": "Check spelling in web part settings.",
+
+    // Detail Panel
+    "UnitOfficeLabel": "Unit / Office",
+    "ReportsToLabel": "Reports To",
+    "DirectReportsLabel": "Direct Reports",
+    "SubordinatesLabel": "Subordinates",
+    "BilletPanelPrefix": "Billet:",
+    "PanelConfigureHint": "Configure \u201CDetail Panel Columns\u201D in settings to show more fields here.",
+
+    // Add Modal
+    "AddPositionTitle": "Add Position",
+    "BilletInputLabel": "Billet (Position ID)",
+    "RankInputLabel": "Rank",
+    "NameInputLabel": "Name",
+    "TitleInputLabel": "Title",
+    "OfficeInputLabel": "Office",
+    "UnitInputLabel": "Unit",
+    "SpecialtyCodeInputLabel": "Specialty Code",
+    "OwnerInputLabel": "Owner (Parent Billet)",
+    "OwnerInputPlaceholder": "Leave blank for root position",
+    "RequiredPrefix": "Required:",
+    "AddSavingLabel": "Saving\u2026",
+    "AddButtonLabel": "Add Position",
+    "AddFailedError": "Failed to add position. Please try again.",
+    "CancelButton": "Cancel",
+
+    // Edit Modal
+    "DeleteButton": "Delete",
+    "EditPositionTitle": "Edit Position",
+    "BilletChangeWarning": "Changing the Billet ID will automatically update all direct reports to use the new ID.",
+    "BilletCollisionError": "is already used by another position.",
+    "EditSavingLabel": "Saving\u2026",
+    "SaveChangesButton": "Save Position",
+    "EditFailedError": "Failed to save changes. Please try again.",
+
+    // Remove Modal
+    "RemovePositionTitle": "Remove Position",
+    "RemovePromptPrefix": "You are about to remove",
+    "RemoveReportsWarningPrefix": "This position has",
+    "RemoveReportsWarningSuffix_Singular": "direct report. If removed, all direct reports will be moved up to",
+    "RemoveReportsWarningSuffix_Plural": "direct reports. If removed, all direct reports will be moved up to",
+    "RemoveConfirmQuestion": "Are you sure you want to remove this position?",
+    "RemovingLabel": "Removing\u2026",
+    "YesRemoveButton": "Yes, Remove",
+
+    // Move (Reparent) Modal
+    "MovePositionTitle": "Move Position",
+    "MovePromptPrefix": "Move",
+    "MovePromptMiddle": "to report to",
+    "MoveTopLevel": "top level (no parent)",
+    "MoveSavingLabel": "Saving\u2026",
+    "MoveButton": "Move",
+    "MoveBlockedCrossUnit": "Positions cannot be moved to a different unit.",
+
+    // Drag-to-scroll
+    "RootDropZoneText": "Drop here to make a top-level (root) position",
+
+    // Card
+    "VacantLabel": "Vacant",
+    "EditPositionTooltip": "Edit position",
+    "RemovePositionTooltip": "Remove position"
+  }
+});
